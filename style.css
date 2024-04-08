@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  text-align: justify;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#subtopnav {
+  position: fixed;
+  background-color: black; /* Ubah warna latar belakang */
+  color: black; /* Ubah warna teks */
+  padding: 5px 10px; /* Atur padding atas/bawah dan kiri/kanan */
+  font-family: 'Arial', sans-serif; /* Gunakan font yang umum */
+  font-size: 16px; /* Sesuaikan ukuran font */
+  top: 0;
+  left: 0px; /* Geser ke kiri */
+  right: 20px;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ubah shadow */
+}
+
+#subtopnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Geser tulisan ke kiri */
+}
+
+#subtopnav ul li {
+  display: inline-block; /* Tampilkan dalam satu baris */
+  margin-right: 10px;
+  border: 1px solid #fff; /* Berikan garis tepi */
+  border-radius: 5px; /* Berikan sudut bulat */
+  padding: 5px 10px; /* Atur padding */
+}
+
+#subtopnav ul li:last-child {
+  margin-right: 0;
+}
+
+#subtopnav ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+#subtopnav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+section.pengantar {
+  color: black;
+}
+
+section h1 {
+  margin-top: 10px;
+  font-family: "Playfair Display", serif
+}
+
+section img {
+  max-width: 40%;
+  float: right;
+  margin-left: 20px;
+}
+
+section p {
+  text-align: justify;
+}
+
+section ul {
+  padding-left: 20px;
+}
+
+section ul li {
+  margin-bottom: 10px;
+}
+
+section ul li:last-child {
+  margin-bottom: 0;
+}
+
+section.pengantar {
+  color: #fff;
+  background: none;
+}
+
+section img {
+  max-width: 100%;
+  float: right;
+  height: max-content;
+  margin-left: 20px;
+}
+
+footer {
+  color: #f1f1f1;
+  text-align: center;
+  position: bottom;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+section.class {
+  float: left;
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  background: none;
+}
+
+.penjelasan {
+  gap: 20px;
+  display: flex;
+  flex-direction: row-reverse; 
+  align-items: center; 
+}
+
+.penjelasan .content-container {
+  flex: 1; 
+}
+
+.penjelasan .text-container {
+  text-align: justify; 
+  padding-left: 20px; 
+}
+
+.penjelasan .image-container {
+  max-width: 40%; 
+  width: 100%;
+}
+
+.penjelasan .image-container img {
+  width: 100%; 
+  height: auto; 
+  float: right;
+}
+
+.animation-box{
+  height: 10rem;
+  width: 10rem;
+  background-color: lightcoral;
+}
+
+.penjelasan{
+  transition: all 1s;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(200px);
+}
+
+.fra{
+  transition: all 1s;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(200px);
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+
+
+
